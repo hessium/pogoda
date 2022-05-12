@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+
+.top__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 41px;
+
+    svg {
+        width: 119px;
+        height: 119px;
+    }
+}
+
+.bottom__block {
+    font-size: 25px;
+    line-height: 30px;
+    color: $grey;
+}
+
+.this {
+
+    
+    &__day {
+        max-width: 400px;
+        padding: 20px;
+        width: 100%;
+        background: $lite-backrgound;
+        box-shadow: $box-shadow;
+        border-radius: $border-radius;
+
+        &_name {
+            font-size: 40px;
+            line-height: 47px;
+            color: $base-color;
+        }
+    }
+
+    &__temp {
+        font-size: 96px;
+        line-height: 118px;
+        color: $blue;
+        font-weight: 500;
+    }
+
+    &__time {
+        margin-bottom: 14px;
+    }
+    
+}

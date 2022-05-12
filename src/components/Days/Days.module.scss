@@ -1,0 +1,98 @@
+@import "../../styles/variables.scss";
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background: $lite-backrgound;
+    box-shadow: $box-shadow;
+    border-radius: 0 0 $border-radius $border-radius;
+    padding: 20px;    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(71, 147, 255, 0.2);
+    border-radius: 10px;
+    padding: 11px;
+    width: 149px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    .day {
+        margin-bottom: 7px;
+        font-size: 18px;
+    }
+
+    .day__info {
+        font-size: 14px;
+        margin-bottom: 12px;
+        color: $grey;
+    }
+
+    .day__temp {
+        font-size: 18px;
+        font-weight: 500;
+        color: $base-color;
+        margin-bottom: 6px;
+    }
+
+    .day__temp_night{
+        font-size: 13px;
+        margin-bottom: 6px;
+        color: $grey;
+    }
+
+    .img {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 13px;
+    }
+
+    .info {
+        font-size: 13px;
+        color:$grey;
+    }
+
+    &:hover {
+        box-shadow: 0 3px 20px 0 rgba(147, 144, 144, 0.28);
+    }
+
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;  
+
+    &__wrapper {
+        display: flex;
+    }
+}
+
+.cancel,
+.tab {
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 5px;
+    padding: 9px 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: $light-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tab {
+    &.active {
+        background: $blue;
+        color: #fff;
+    }
+}
+
+.cancel {
+    margin-right: 0;
+}
