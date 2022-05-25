@@ -4,18 +4,19 @@
     top:  50%;
     left: calc(50% - 325px);
     z-index: 1001;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 40px;
     max-width: 750px;
     width: 100%;
-    background: $lite-backrgound;
+    background: $light-background;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
 }
 
 .blure {
+    display: none;
     position: absolute;
     z-index: 1000;
     width: 100%;
@@ -44,14 +45,14 @@
     .day__temp {
         font-weight: 500;
         font-size: 60px;
-        color: $blue;
+        color: $primary-color;
         margin-bottom: 12px;
     }
 
     .day__name {
         font-size: 25px;
         line-height: 30px;
-        color:$light-color;
+        color:$base-color;
         margin-bottom: 12px;
     }
 
@@ -65,7 +66,7 @@
 
     .day__time, 
     .day__city {
-        color: $grey;
+        color:$base-color;
         margin-bottom: 12px;
         font-size: 15px;
     }

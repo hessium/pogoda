@@ -13,10 +13,12 @@
 }
 
 .bottom__block {
-    font-size: 25px;
-    line-height: 30px;
-    color: $grey;
-}
+    .this__time,
+    .this__city {
+      color: $base-color;
+      font-size: 25px;
+    }
+  }
 
 .this {
 
@@ -25,21 +27,21 @@
         max-width: 400px;
         padding: 20px;
         width: 100%;
-        background: $lite-backrgound;
+        background: var(#{--components-background-default});
         box-shadow: $box-shadow;
         border-radius: $border-radius;
 
         &_name {
             font-size: 40px;
             line-height: 47px;
-            color: $base-color;
+            color: var(#{--text-color-default});
         }
     }
 
     &__temp {
         font-size: 96px;
         line-height: 118px;
-        color: $blue;
+        color: $primary-color;
         font-weight: 500;
     }
 

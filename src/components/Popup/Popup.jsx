@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import cl from './Popup.module.scss';
  import ThisDayItem from '../ThisDayInfo/ThisDayItem'; 
  import GlobalSvgSelector from '../../img/icons/GlobalSvgSelector'; 
 
-const Popup = () => {
+const Popup = ({visible, setVisible}) => {
     
     const items = [
         {
@@ -27,10 +27,14 @@ const Popup = () => {
             value: '3 м/с юго-запад - легкий ветер',
           },
 ]
+const rootClasses =[cl.myModal]
+if(visible) {
+  rootClasses.push(cl.active);
+}
 
     return (
         <>
-        <div className={cl.blure}></div>
+        <div className={cl.blure} onClick={()=> setVisible(false)}></div>
         <div className={cl.popup}>
             <div className={cl.day}>
               <div className={cl.day__temp}> 12° </div>

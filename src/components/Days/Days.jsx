@@ -9,6 +9,7 @@ const Days = () => {
 
     const days = [
         {
+            id:1,
             day: 'Сегодня',
             day_info: '28 авг',
             icon_id: 'sun',
@@ -17,6 +18,7 @@ const Days = () => {
             info: 'Облачно',
           },
           {
+            id:2,
             day: 'Завтра',
             day_info: '29 авг',
             icon_id: 'small_rain_sun',
@@ -25,6 +27,7 @@ const Days = () => {
             info: 'небольшой дождь и солнце',
           },
           {
+            id:3,
             day: 'Ср',
             day_info: '30 авг',
             icon_id: 'small_rain',
@@ -33,6 +36,7 @@ const Days = () => {
             info: 'небольшой дождь',
           },
           {
+            id:4,
             day: 'Чт',
             day_info: '28 авг',
             icon_id: 'mainly_cloudy',
@@ -41,6 +45,7 @@ const Days = () => {
             info: 'Облачно',
           },
           {
+            id:5,
             day: 'Пт',
             day_info: '28 авг',
             icon_id: 'rain',
@@ -49,6 +54,7 @@ const Days = () => {
             info: 'Облачно',
           },
           {
+            id:6,
             day: 'Сб',
             day_info: '28 авг',
             icon_id: 'sun',
@@ -57,6 +63,7 @@ const Days = () => {
             info: 'Облачно',
           },
           {
+            id:7,
             day: 'Вс',
             day_info: '28 авг',
             icon_id: 'sun',
@@ -69,8 +76,8 @@ const Days = () => {
         <>
         <Tabs />
         <div  className={cl.days}>
-            {days.map((day) => 
-            <Card day={day}/>)}
+            {days.map((day, id) => 
+            <Card day={day} key={id}/>)}
         </div>
         </>
     );

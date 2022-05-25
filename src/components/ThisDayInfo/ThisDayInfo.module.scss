@@ -4,9 +4,9 @@
     padding: 40px;
     max-width: 750px;
     width: 100%;
-    background: $lite-backrgound;
     box-shadow: $box-shadow;
     border-radius: $border-radius;
+    background: var(#{--components-background-default});
 }
 
 .item {
@@ -30,19 +30,19 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #fff;
+        background-color: $light-background;
         box-shadow: 1px 4px 10px -1px rgba(71, 147, 255, 0.2);
         border-radius: 50%;
     }
 
     .indicator__name {
         font-size: 14px;
-        color: $grey;
+        color: $base-color;
     }
 
     .indicator__value {
         font-size: 14px;
-        color:$base-color;
+        color: var(#{--text-color-default});
     }
 }
 
